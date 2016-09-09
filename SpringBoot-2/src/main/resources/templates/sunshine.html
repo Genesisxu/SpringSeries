@@ -1,0 +1,49 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<title>无标题文档</title>
+<style type="text/css" media="all">
+html,body{ background:#000;}
+p.shine
+{
+    width: 700px;
+}
+
+.shine
+{
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 125px;
+    
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+	font-family:"微软雅黑";
+	font-size:60px;
+	font-weight:bold;
+	display:block;
+	position:absolute;
+	left:50%; margin-left:-350px;
+	top:50%; margin-top:-100px;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shine
+{
+    0%
+    {
+        background-position: top left;
+    }
+    100%
+    {
+        background-position: top right;
+    }
+}
+</style>
+</head>
+
+<body>
+<p class="shine" th:text="${host}">There are Elevens;</p>
+</body>
+</html>
