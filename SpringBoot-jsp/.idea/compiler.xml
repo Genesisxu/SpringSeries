@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="SpringBoot-jsp" />
         <module name="testJsp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBoot-jsp" target="1.8" />
       <module name="testJsp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
